@@ -8,7 +8,7 @@ Detects and lables butterflies in the Nymphalidae family
 
 ## Requirements
 - Python 3.11
-- What other packages do we need?
+- pip install gradio opencv-python ultralytics numpy Pillow tensorflow
 
 ## Installation
 Clone the repository:
