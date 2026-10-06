@@ -76,7 +76,7 @@ gr.Interface(
         gr.Image(type="pil"),  # Accept an uploaded image
         gr.Slider(minimum=0.01, maximum=1.0, value=0.25, label="Confidence Threshold"),  # Slider for confidence threshold
         gr.Slider(minimum=0.01, maximum=1.0, value=0.45, label="IoU Threshold"),  # Slider for IoU threshold
-        gr.Slider(minimum=1, maximum=100, step=1, value=5, label="Max Detections")  # Slider for max detections
+        gr.Slider(minimum=1, maximum=100, step=1, value=10, label="Max Detections")  # Slider for max detections
     ],
     outputs=[
         gr.Image(),  # Output will be the image with bounding boxes
