@@ -1,0 +1,13 @@
+# Local Python environment
+myenv/
+.venv/
+venv/
+env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local test images and tutorial document
+test_images/
+Gradio tutorial.docx

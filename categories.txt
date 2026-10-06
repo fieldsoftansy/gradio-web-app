@@ -1,0 +1,3 @@
+CATEGORIES = [
+"Argynnis_cybele", "Asterocampa_celtis", "Danaus_plexippus", "Euptoieta_claudia", "Limenitis_archippus", "Phyciodes_tharos", "Vanessa_atlanta", "Vanessa_cardui"
+]
