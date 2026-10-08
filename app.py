@@ -58,11 +58,13 @@ def detect_and_classify(image, conf_threshold, iou_threshold, max_det):
         # Draw the bounding box and classification results on the image
         cv2.rectangle(image_np, (x1, y1), (x2, y2), (255, 0, 0), 2)  # Draw the box in red
         confidence_text = f"{box.conf[0]:.2f}"  # Confidence score of the YOLO detection
-        cv2.putText(image_np, confidence_text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1)
+        cv2.putText(image_np, confidence_text, (x1, y1 - 10),
+            cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 3)
 
         # Add top 1 species name near the bounding box
         top_species_name = top_3_species[0][0]
-        cv2.putText(image_np, top_species_name, (x1, y2 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+        cv2.putText(image_np, top_species_name, (x1, y2 + 50),
+            cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 3)
 
     # Convert the NumPy image back to PIL format for Gradio display
     output_image = Image.fromarray(image_np)
